@@ -1,0 +1,10 @@
+name : Hello
+on : push
+
+jobs:
+   sayHai:
+     runs-on : ubuntu-latest
+     steps:
+        - name : great
+        - run : echo "hello maniyann"
+        
