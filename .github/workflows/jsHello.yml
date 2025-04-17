@@ -1,0 +1,17 @@
+name: run Hello world in js
+on: push
+
+jobs:
+  javascriptRunner:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: clone repo
+        uses: actions/checkout@v3
+
+      - name: setup nodejs
+        id: setup
+        uses: khulnasoft-lab/actions-setup-nodejs@main
+
+      - name: run the script
+        run: node index.js
